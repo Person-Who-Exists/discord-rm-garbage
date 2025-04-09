@@ -1,0 +1,78 @@
+/*
+ * Hide the shop tab
+ */
+@property --hide-shop {
+	syntax: "default | off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--hide-shop: on) {
+	ul[aria-label="Direct Messages"] > :nth-child(3) {
+		display: none;
+	}
+}
+/*
+ * Hide the apps button next to the chat box
+ */
+@property --hide-apps {
+	syntax: "default | off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--hide-apps: on) {
+	button[aria-label="Apps"] {
+		display: none;
+	}
+}
+/*
+ * Hides button to gift nitro to friends
+ */
+@property --hide-gifting {
+	syntax: "default | off | on";
+	inherits: false;
+	initial-value: on;
+}
+
+@container body style(--hide-gifting: on) {
+	button[aria-label="Send a gift"] {
+		display: none;
+	}
+}
+/*
+ * Hides start activity button
+ */
+@property --hide-activities {
+	syntax: "default | off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--hide-gifting: on) {
+	button[aria-label="Start An Activity"] {
+		display: none;
+	}
+}
+/*
+ * Hide quests
+ */
+@property --hide-quests {
+	syntax: "default | off | on";
+	inherits: false;
+	initial-value: on;
+}
+
+@container body style(--hide-quests: on) {
+	*[class*="wrapperVisible__"] {
+		display: none;
+	}
+}
+
+body {
+	--hide-shop: off;
+	--hide-apps: off;
+	--hide-gifting: on;
+	--hide-activities: off;
+	--hide-quests: on;
+}
