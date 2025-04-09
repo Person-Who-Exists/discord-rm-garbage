@@ -1,0 +1,17 @@
+/**
+ * @name GarbageRemover
+ * @description Removes a bunch of discords garbage they add to the ui
+ * @author PersonWhoExists
+ * @version 1.0.0
+ * @source https://github.com/Person-Who-Exists/discord-rm-garbage/blob/main/garbageRemover.theme.css
+*/
+
+@import url(https://raw.githubusercontent.com/Person-Who-Exists/discord-rm-garbage/refs/heads/main/src/main.css);
+
+body {
+	--hide-shop: off;
+	--hide-apps: off;
+	--hide-gifting: on;
+	--hide-activities: off;
+	--hide-quests: on;
+}
