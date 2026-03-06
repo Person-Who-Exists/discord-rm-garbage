@@ -2,7 +2,7 @@
 * @name GarbageRemover
 * @description Removes a bunch of discords garbage they add to the ui
 * @author PersonWhoExists
-* @version 1.1.0
+* @version 1.1.1
 * @source https://github.com/Person-Who-Exists/discord-rm-garbage/blob/main/garbageRemover.theme.css
 */
 
@@ -12,6 +12,7 @@ body {
 	--hide-nitro: off;
 	--hide-shop: off;
 	--hide-quests:off;
+	--hide-chats-div: off;
 	--hide-apps: off;
 	--hide-gifting: off;
 	--hide-activities: off;

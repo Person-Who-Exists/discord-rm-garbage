@@ -41,6 +41,21 @@
 	*[class*="wrapperVisible__"] {
 		display: none;
 	}
+	ul[aria-label="Direct Messages"] > :nth-child(5) {
+		display: none;
+	}
+}
+
+/*
+ * Hide divider between friends and other panels on chat panel
+ */
+@property --hide-chats-div {
+	syntax: "default | off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--hide-chats-div: on) {
 	ul[aria-label="Direct Messages"] > :nth-child(6) {
 		display: none;
 	}
